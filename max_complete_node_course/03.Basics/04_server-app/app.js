@@ -1,5 +1,5 @@
 const http = require("http");
-const routes = require('./04_routes')
+const routes = require('./routes')
 
 console.log(routes.someText);
 
