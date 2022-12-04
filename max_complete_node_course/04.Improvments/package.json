@@ -1,0 +1,16 @@
+{
+  "name": "basic-app",
+  "version": "1.0.0",
+  "description": "First trial at using Node.js for server-side functionnalities",
+  "main": "app.js",
+  "scripts": {
+    "start": "nodemon --legacy-watch app.js",
+    "start-server": "node app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "GharrowBM",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^2.0.20"
+  }
+}
