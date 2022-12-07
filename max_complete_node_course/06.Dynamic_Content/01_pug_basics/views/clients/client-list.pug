@@ -1,0 +1,19 @@
+extends ../layouts/main-layout.pug
+
+block content 
+  main
+    h1 Clients List
+    hr
+    if clients.length > 0
+      each c in clients
+        .client-container 
+          .client-infos
+            b Firstname:
+            span #{c.firstname}
+          .client-infos
+            b Lastname:
+            span #{c.lastname}
+    else 
+      p No clients yet!
+
+  

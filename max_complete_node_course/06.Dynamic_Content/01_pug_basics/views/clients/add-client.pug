@@ -1,0 +1,15 @@
+extends ../layouts/main-layout.pug
+
+block content 
+  main
+    h1 Add a Client
+    hr
+    form(action="/clients/add-client", method="post")
+      .form-item
+        label(for="lastname") Lastname: 
+        input#lastname(type="text", name="lastname", placeholder="DUPONT", required)
+      .form-item
+        label(for="firstname") Firstname: 
+        input#firstname(type="text", name="firstname", placeholder="John", required)
+      button Submit
+      
